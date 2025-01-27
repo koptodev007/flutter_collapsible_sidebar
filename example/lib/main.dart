@@ -63,7 +63,7 @@ class _SidebarPageState extends State<SidebarPage> {
             ),
             CollapsibleItem(
                 text: 'Shop',
-                iconImage: AssetImage("assets/shop_icon.png"),
+               // iconImage: AssetImage("assets/shop_icon.png"),
                 icon: Icons.ac_unit,
                 onPressed: () => setState(() => _headline = 'Shop'),
                 onHold: () => ScaffoldMessenger.of(context)
@@ -137,8 +137,8 @@ class _SidebarPageState extends State<SidebarPage> {
       ),
       CollapsibleItem(
           text: 'News',
-          iconImage: NetworkImage(
-              "https://cdn-icons-png.flaticon.com/512/330/330703.png"),
+        //  iconImage: NetworkImage(
+          //    "https://cdn-icons-png.flaticon.com/512/330/330703.png"),
           onPressed: () => setState(() => _headline = 'News'),
           onHold: () => ScaffoldMessenger.of(context)
               .showSnackBar(SnackBar(content: const Text("News"))),
